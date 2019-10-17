@@ -18,9 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHOP BY CATEGORY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLu-OO-2cC">
-                                <rect key="frame" x="10" y="25" width="169.5" height="23.5"/>
-                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop By Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLu-OO-2cC">
+                                <rect key="frame" x="10" y="25" width="140" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -28,18 +28,18 @@
                                 <rect key="frame" x="0.0" y="64.5" width="375" height="538.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="159" id="i6s-NB-ReK" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="159"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="129" id="i6s-NB-ReK" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="129"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="i6s-NB-ReK" id="5w8-xh-4Dl">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="158.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="128.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="UKI-tO-HOO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="158.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="128.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoddies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43z-0m-EwG">
-                                                    <rect key="frame" x="114" y="59" width="147" height="41"/>
+                                                    <rect key="frame" x="114" y="44" width="147" height="41"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="147" id="CQQ-MW-Ntf"/>
                                                         <constraint firstAttribute="height" constant="41" id="Yto-W2-6ll"/>
@@ -59,8 +59,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="categoryImage" destination="UKI-tO-HOO" id="CRs-F6-uyy"/>
-                                            <outlet property="categoryTitle" destination="43z-0m-EwG" id="t6e-Cg-B4J"/>
+                                            <outlet property="categoryImage" destination="UKI-tO-HOO" id="KLP-3P-0bS"/>
+                                            <outlet property="categoryTitle" destination="43z-0m-EwG" id="P7o-7T-gW5"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -79,7 +79,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="CODER-SWAG" id="qVw-zB-Rqi"/>
                     <connections>
-                        <outlet property="categoryTable" destination="1e6-ts-cL6" id="8QX-bX-OXy"/>
+                        <outlet property="categoryTable" destination="1e6-ts-cL6" id="sYp-UL-0QW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

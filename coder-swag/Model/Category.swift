@@ -14,8 +14,8 @@ struct Category {
     private(set) public var imageName: String   //ditto
     
     init(title: String, imageName : String){
-    self.title = title
-    self.imageName = imageName
+        self.title = title
+        self.imageName = imageName
 }
 
 }
