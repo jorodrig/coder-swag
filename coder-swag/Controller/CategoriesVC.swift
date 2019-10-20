@@ -35,11 +35,19 @@ class CategoriesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
         }else{
             return CategoryCell()
         }
-        
-        
-        
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath:IndexPath){
+            let category = DataService.instance.getCategories()[indexPath.row]
+            performSegue(withIdentifier: "ProductsVC", sender: category)   //force unwrap below in func prepare for seque
+        }
     
-}
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let productsVC = segue.destination as? ProductsVC {
+            assert(sender as? Category != nil)  // for BUiLD Time - not for production - must be of type category or will crash App at build time
+            productsVC.initProducts(category: sender as! Category)  //forced unwrap because we are certain it is a Category.  No need to use a Guard or if-let statement because this App demands this be a Category and nothing else
+        }
+    }
+    }
+
 

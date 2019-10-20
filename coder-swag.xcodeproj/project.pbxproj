@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C01FD46235B48BC0014FC20 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C01FD45235B48BC0014FC20 /* ProductCell.swift */; };
 		7C33C30623573B1500175409 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C33C30523573B1500175409 /* AppDelegate.swift */; };
 		7C33C30823573B1500175409 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C33C30723573B1500175409 /* CategoriesVC.swift */; };
 		7C33C30B23573B1500175409 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C33C30923573B1500175409 /* Main.storyboard */; };
@@ -15,9 +16,12 @@
 		7C33C31B235743EC00175409 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C33C31A235743EC00175409 /* CategoryCell.swift */; };
 		7C33C31D23574A2A00175409 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C33C31C23574A2A00175409 /* Category.swift */; };
 		7C33C32023574C6100175409 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C33C31F23574C6100175409 /* DataService.swift */; };
+		7CE6BE81235B52B100BCC06A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE6BE80235B52B100BCC06A /* Product.swift */; };
+		7CE6BE83235BE10900BCC06A /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE6BE82235BE10900BCC06A /* ProductsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C01FD45235B48BC0014FC20 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		7C33C30223573B1500175409 /* coder-swag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coder-swag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C33C30523573B1500175409 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C33C30723573B1500175409 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
@@ -28,6 +32,8 @@
 		7C33C31A235743EC00175409 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		7C33C31C23574A2A00175409 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		7C33C31F23574C6100175409 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		7CE6BE80235B52B100BCC06A /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		7CE6BE82235BE10900BCC06A /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				7C33C31A235743EC00175409 /* CategoryCell.swift */,
+				7C01FD45235B48BC0014FC20 /* ProductCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -85,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				7C33C31C23574A2A00175409 /* Category.swift */,
+				7CE6BE80235B52B100BCC06A /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -93,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				7C33C30723573B1500175409 /* CategoriesVC.swift */,
+				7CE6BE82235BE10900BCC06A /* ProductsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -176,11 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CE6BE83235BE10900BCC06A /* ProductsVC.swift in Sources */,
 				7C33C30823573B1500175409 /* CategoriesVC.swift in Sources */,
 				7C33C30623573B1500175409 /* AppDelegate.swift in Sources */,
 				7C33C31B235743EC00175409 /* CategoryCell.swift in Sources */,
+				7C01FD46235B48BC0014FC20 /* ProductCell.swift in Sources */,
 				7C33C31D23574A2A00175409 /* Category.swift in Sources */,
 				7C33C32023574C6100175409 /* DataService.swift in Sources */,
+				7CE6BE81235B52B100BCC06A /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
